@@ -1,0 +1,17 @@
+[
+    {
+        "amount": 100.0,
+        "category": "etc",
+        "description": "petrol"
+    },
+    {
+        "amount": 1000.0,
+        "category": "Travel",
+        "description": "Amba travel "
+    },
+    {
+        "amount": 3000.0,
+        "category": "Hotel and Food",
+        "description": "2"
+    }
+]
