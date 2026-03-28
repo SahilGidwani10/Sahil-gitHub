@@ -1,15 +1,8 @@
-# Expense Tracker (Beginner-Friendly Python Project)
-# Features:
-# - Add expense
-# - View all expenses
-# - Get total spending
-# - Save & load from file
-
 import json
 
 FILE_NAME = "expenses.json"
 
-# Load existing expenses
+
 def load_expenses():
     try:
         with open(FILE_NAME, "r") as file:
@@ -17,12 +10,12 @@ def load_expenses():
     except FileNotFoundError:
         return []
 
-# Save expenses to file
+
 def save_expenses(expenses):
     with open(FILE_NAME, "w") as file:
         json.dump(expenses, file, indent=4)
 
-# Add a new expense
+
 def add_expense(expenses):
     amount = float(input("Enter amount: "))
     category = input("Enter category (Food, Travel, etc.): ")
@@ -38,7 +31,7 @@ def add_expense(expenses):
     save_expenses(expenses)
     print("Expense added successfully!\n")
 
-# View all expenses
+
 def view_expenses(expenses):
     if not expenses:
         print("No expenses found.\n")
@@ -49,12 +42,12 @@ def view_expenses(expenses):
         print(f"{i}. {exp['amount']} | {exp['category']} | {exp['description']}")
     print()
 
-# Calculate total spending
+
 def total_expense(expenses):
     total = sum(exp["amount"] for exp in expenses)
     print(f"\nTotal Spending: {total}\n")
 
-# Main menu
+
 def main():
     expenses = load_expenses()
 
@@ -81,3 +74,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
