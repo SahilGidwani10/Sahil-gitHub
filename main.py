@@ -1,5 +1,3 @@
-print ("Hello World!")
-print ("Welcome to my Github repository.")
 class Human:
     def __init__(self,name,age):
         self.name = name 
