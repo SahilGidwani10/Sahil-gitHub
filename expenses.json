@@ -13,5 +13,15 @@
         "amount": 3000.0,
         "category": "Food",
         "description": "Hotel and Food"
+    },
+    {
+        "amount": 100.0,
+        "category": "food",
+        "description": "Streat food"
+    },
+    {
+        "amount": 100.0,
+        "category": "food",
+        "description": "jai matatdi"
     }
 ]
